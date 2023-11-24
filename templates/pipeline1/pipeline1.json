@@ -8,12 +8,12 @@
 		},
 		"AzureBlobStorage1": {
 			"type": "string",
-			"defaultValue": "AzureBlobStorage1"
+			"defaultValue": "linkedService/AzureBlobStorage1.json"
 			
 		},
 		"AzureBlobStorage2": {
 			"type": "string",
-			"defaultValue": "AzureBlobStorage2"
+			"defaultValue": "linkedService/AzureBlobStorage2.json"
 		}
 	},
 	"variables": {
