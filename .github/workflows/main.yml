@@ -15,3 +15,6 @@ jobs:
 
     - name: Login to Azure
       run: az login
+    - name: Deploy to Azure
+      run: |
+        az deployment group create --resource-group testResource --template-file ./templates/pipeline1/pipeline1.json --parameters ./pipeline/pipeline1.json
