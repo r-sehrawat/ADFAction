@@ -21,6 +21,6 @@ jobs:
       with:
         scope: 'resourcegroup'
         resourceGroupName: 'testResource'
-        template: /home/runner/work/ADFAction/ADFAction/templates/pipeline1/ARMTemplateForFactory.json
+        template: /home/runner/work/ADFAction/templates/pipeline1/ARMTemplateForFactory.json
         deploymentMode: Incremental
         parameters: factoryName=adfv2-cicd-target
