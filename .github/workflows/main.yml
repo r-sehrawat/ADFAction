@@ -23,6 +23,6 @@ jobs:
       with:
         scope: 'resourcegroup'
         resourceGroupName: 'testResource'
-        template: ${{ github.workspace }}/templates/pipeline1/ARMTemplateForFactory.json
+        template: ${{ github.workspace }}/templates/pipeline1/pipeline1.json
         deploymentMode: Incremental
         parameters: factoryName=adfv2-cicd-target
