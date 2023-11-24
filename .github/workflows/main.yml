@@ -15,6 +15,11 @@ jobs:
 
     - name: Login to Azure
       run: az login
-    - name: Deploy to Azure
-      run: |
-        az deployment group create --resource-group testResource --template-file ./templates/pipeline1/pipeline1.json --parameters ./pipeline/pipeline1.json
+    - name: Deploy Azure Resource Manager (ARM) Template
+      uses: Azure/arm-deploy@v1.0.6
+      with:
+        scope: 'resourcegroup'
+        resourceGroupName: 'testResource'
+        template: ./templates/pipeline1/ARMTemplateForFactory.json
+        deploymentMode: Incremental
+        parameters: factoryName=adfv2-cicd-target
