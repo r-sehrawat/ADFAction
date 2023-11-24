@@ -12,7 +12,8 @@ jobs:
     steps:
     - name: Checkout Repository
       uses: actions/checkout@v2
-
+    - name: Print repo path
+      run: echo "RepositoryPath: ${{ github.workspace }}"
     - name: Login to Azure
       run: az login
     - name: Deploy Azure Resource Manager (ARM) Template
