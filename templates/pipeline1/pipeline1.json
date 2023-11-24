@@ -7,13 +7,11 @@
 			"metadata": "Data Factory name"
 		},
 		"AzureBlobStorage1": {
-			"type": "string",
-			"defaultValue": "linkedService/AzureBlobStorage1.json"
+			"type": "string"
 			
 		},
 		"AzureBlobStorage2": {
-			"type": "string",
-			"defaultValue": "linkedService/AzureBlobStorage2.json"
+			"type": "string"
 		}
 	},
 	"variables": {
